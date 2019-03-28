@@ -1,0 +1,17 @@
+input("a.Type a: ")
+print(20*" *")
+n = int(input("b.Enter a number: "))
+print(n*" *")
+input("c.Type c: ")
+print(9*" X *")
+m = int(input("d.Enter a number: "))
+print(m*" X *")
+input("ef. Type e: ")
+for i in range(3):
+    print(7*" *")
+    print()
+g1 = int(input("Nhap n: "))
+g2 = int(input("Nhap m: "))
+for i in range(g2):
+    print(g1*" *")
+    print()
