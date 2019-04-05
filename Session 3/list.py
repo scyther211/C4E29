@@ -1,4 +1,4 @@
-# menu = ["Com","Canh","Thit"]
+menu = ["Com","Canh","Thit"]
 
 #READ
 # print(menu)
@@ -14,12 +14,12 @@
 #     print(index)
 
 # loop items and index
-# for index, item in enumerate(menu):
-#     print(index, item)
+for index, item in enumerate(menu):
+    print(index, item)
 
 
 #CREATE
-menu = ["Com","Canh","Thit"]
+# menu = ["Com","Canh","Thit"]
 
 # n = input("nhap gi do")
 # menu.append(n)
@@ -28,8 +28,8 @@ menu = ["Com","Canh","Thit"]
 
 
 # UPDATE
-menu[0] = "Pho"
-print(menu, sep=", ")
+# menu[0] = "Pho"
+# print(menu, sep=", ")
 
 # DELETE
 # del menu[1]
