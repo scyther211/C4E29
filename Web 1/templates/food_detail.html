@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food detail</title>
+</head>
+<body>
+        <b>Description:</b> {{ food_details.description }} <br>
+        <img src="{{ food_details.Link }}"> <br>
+        {% if food_details.Type == 'Eat' %}
+            <b>This is for eating</b>
+        {% else %}
+            <b>This is for drinking</b>
+        {% endif %}
+    <hr>
+</body>
+</html>

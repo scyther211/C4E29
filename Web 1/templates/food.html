@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food List</title>
+</head>
+<body>
+    {% for food in foods %}
+        <h3>Dish No.{{ loop.index }}</h3>
+        <br>
+        <b>Dish:</b> {{ food.title }} <br>
+        <b>Description:</b> {{ food.description }} <br>
+        <img src="{{ food.Link }}"> <br>
+        {% if food.Type == 'Eat' %}
+            <b>This is for eating</b>
+        {% else %}
+            <b>This is for drinking</b>
+        {% endif %}
+        <a href="/food/{{ loop.index0 }}"><b>Detail</b></a> 
+        <hr>
+    {% endfor %}   
+</body>   
+</html>
+
